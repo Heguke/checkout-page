@@ -10,8 +10,8 @@ body {
     margin: 0rem auto;
     width: 100%;
     max-width: 1200px;
-    // Box left style
     display: flex;
+    // Box left style
     .box-left {
         width: 50%;
         form {
@@ -154,3 +154,8 @@ body {
         }
     }
 }
+
+@include desktop;
+@include desktop2;
+@include tablet;
+@include mobile;

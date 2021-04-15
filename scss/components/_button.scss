@@ -10,6 +10,7 @@ input[type="button"] {
     float: right;
     transition: 0.3s ease background-color;
     text-align: end;
+    margin-top: 2rem;
     &:hover {
         background-color: #d68d4c;
     }

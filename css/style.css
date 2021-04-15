@@ -39,6 +39,7 @@ input[type=button] {
   float: right;
   transition: 0.3s ease background-color;
   text-align: end;
+  margin-top: 2rem;
 }
 input[type=button]:hover {
   background-color: #d68d4c;
@@ -203,6 +204,83 @@ body {
 .container .box-right .shopping-box .box-total .box-total-flex .total-price {
   font-size: 1.06rem;
   column-rule-color: #333333;
+}
+
+@media (max-width: 1240px) {
+  .box-left {
+    width: 40%;
+  }
+  .box-left form label input[type=text],
+.box-left form label input[type=tel],
+.box-left form label input[type=email],
+.box-left form label select {
+    width: 87%;
+  }
+  .box-left form .box-group input[type=text],
+.box-left form .box-group select {
+    width: 70%;
+  }
+  .box-left form .box-group select {
+    width: 1rem;
+  }
+
+  .box-right {
+    width: 50%;
+  }
+}
+@media (max-width: 1050px) {
+  form .box-group {
+    display: flex;
+    flex-direction: column;
+  }
+  form .box-group input[type=text],
+form .box-group select {
+    width: 87%;
+  }
+  form .box-group select {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .container .box-left {
+    width: 100%;
+    padding: 2rem;
+  }
+  .container .box-left form {
+    width: 80%;
+  }
+  .container .box-left form label input[type=text],
+.container .box-left form label input[type=tel],
+.container .box-left form label input[type=email],
+.container .box-left form label select {
+    width: 90%;
+  }
+  .container .box-left form .box-group input[type=text],
+.container .box-left form .box-group select {
+    width: 90%;
+  }
+  .container .box-left form .box-group select {
+    max-width: 100%;
+  }
+  .container .box-right {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .container .box-left form label input[type=text],
+.container .box-left form label input[type=tel],
+.container .box-left form label input[type=email],
+.container .box-left form label select {
+    width: 83%;
+  }
+  .container .box-left form .box-group input[type=text],
+.container .box-left form .box-group select {
+    width: 82%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
