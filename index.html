@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/07c13fcbdb.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/favicon/devchallenges.png" type="image/x-icon">
+    <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Checkout Page</title>
 </head>
 
 <body>
     <div class="container">
         <h1 class="title">Checkout</h1>
-        <div class="box-left">        
+        <!-- Box-Left -->
+        <div class="box-left">
+            <!-- Form -->
             <form action="#" method="post">
                 <h3 class="subtitle">Contact information</h3>
 
@@ -24,7 +31,7 @@
                     <span class="material-icons">
                         email
                     </span>
-                    <input type="text" name="email" id="email" placeholder="Enter your email...">
+                    <input type="email" name="email" id="email" placeholder="Enter your email...">
                 </label>
 
                 <label for="phone">
@@ -32,10 +39,71 @@
                     <span class="material-icons">
                         call
                     </span>
-                    <input type="number" name="phone" id="phone" placeholder="Enter your phone...">
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone...">
                 </label>
+
+                <h3 class="subtitle text-margin-top">Shipping address</h3>
+
+                <label for="name">
+                    Full name
+                    <span class="material-icons">
+                        account_circle
+                    </span>
+                    <input type="text" name="name" id="name" placeholder="Enter your name...">
+                </label>
+
+                <label for="addres">
+                    Address
+                    <span class="material-icons">
+                        home
+                    </span>
+                    <input type="text" name="addres" id="addres" placeholder="Your address...">
+                </label>
+
+                <label for="city">
+                    City
+                    <span class="material-icons">
+                        location_city
+                    </span>
+                    <input type="text" name="city" id="city" placeholder="Your city...">
+                </label>
+
+                <div class="box-group">
+                    <label for="country">
+                        Country
+                        <span class="material-icons">
+                            public
+                        </span>
+                        <select name="country" id="country">
+                            <option disabled selected value="">Your country...</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="canada">Canada</option>
+                            <option value="united-stated">United Stated</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+
+                    <label for="postal">
+                        Postal code
+                        <span class="material-icons">
+                            markunread_mailbox
+                        </span>
+
+                        <input type="text" name="postal" id="postal" placeholder="Your postal code...">
+                    </label>
+                </div>
+
+                <div class="box-info">
+                    <input type="checkbox" name="save" id="save">
+                    <p class="text-info">Save this information for next time</p>
+                </div>
+
+                <input type="button" value="Continue">
             </form>
+            <!-- End Form -->
         </div>
+
+        <!-- Box-Right -->
         <div class="box-right">
 
         </div>

@@ -1,0 +1,31 @@
+// Typography
+
+@mixin title {
+    font-size: 2.18rem;
+    font-weight: 600;
+    color: $secundary-color;
+}
+
+@mixin subtitle {
+    font-size: 1.12rem;
+    color: $gray1;
+}
+
+@mixin label {
+    font-size: 0.75rem;
+    color: $gray2;
+    @content;
+}
+
+@mixin span {
+    font-size: 1.5rem;
+    color: $gray3;
+    @content;
+}
+
+@mixin inputs {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $gray3;
+    @content
+}

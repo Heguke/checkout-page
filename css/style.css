@@ -1,0 +1,113 @@
+.title {
+  font-size: 2.18rem;
+  font-weight: 600;
+  color: #4E5150;
+}
+
+.subtitle {
+  font-size: 1.12rem;
+  color: #333333;
+}
+
+input[type=button] {
+  padding: 1.25rem 3.12rem;
+  background-color: #F2994A;
+  color: #FFFFFF;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  float: right;
+  transition: 0.3s ease background-color;
+  text-align: end;
+}
+input[type=button]:hover {
+  background-color: #d68d4c;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.container {
+  margin: 5rem auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.container .box-left {
+  width: 50%;
+}
+.container .box-left form {
+  margin-top: 3rem;
+}
+.container .box-left form label {
+  font-size: 0.75rem;
+  color: #4F4F4F;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container .box-left form label span {
+  font-size: 1.5rem;
+  color: #828282;
+  position: absolute;
+  top: 2.2rem;
+  left: 1rem;
+}
+.container .box-left form label input[type=text],
+.container .box-left form label input[type=tel],
+.container .box-left form label input[type=email],
+.container .box-left form label select {
+  width: 91.5%;
+  height: 2.87rem;
+  border: 1px solid #828282;
+  border-radius: 0.75rem;
+  padding-left: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #828282;
+}
+.container .box-left form label input[type=text]:focus,
+.container .box-left form label input[type=tel]:focus,
+.container .box-left form label input[type=email]:focus,
+.container .box-left form label select:focus {
+  outline: none;
+  color: #333333;
+}
+.container .box-left form label input[type=tel] {
+  margin-bottom: 3rem;
+}
+.container .box-left form .box-group {
+  display: flex;
+}
+.container .box-left form .box-group input[type=text],
+.container .box-left form .box-group select {
+  width: 15.5rem;
+  margin-right: 1rem;
+}
+.container .box-left form .box-group select {
+  background: none;
+  width: 17.8rem;
+  height: 3.05rem;
+}
+.container .box-left form .box-info {
+  display: flex;
+  align-items: center;
+}
+.container .box-left form .box-info input[type=checkbox] {
+  width: 21px;
+  height: 21px;
+}
+.container .box-left form .box-info .text-info {
+  font-size: 0.75rem;
+  color: #4F4F4F;
+  margin-left: 0.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

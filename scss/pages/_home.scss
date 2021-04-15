@@ -1,0 +1,80 @@
+body {
+    background-color: $primary-color;
+    font-family: $montserrat;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+// Style Container
+.container {
+    margin: 5rem auto;
+    width: 100%;
+    max-width: 1200px;
+    // Box left style
+    .box-left {
+        width: 50%;
+        // Form Style
+        form {
+            margin-top: 3rem;
+            // background-color: blue;
+            label {
+                @include label;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                span {
+                    @include span;
+                    position: absolute;
+                    top: 2.2rem;
+                    left: 1rem;
+                }
+                input[type="text"],
+                input[type="tel"],
+                input[type="email"],
+                select {
+                    width: 91.5%;
+                    height: 2.87rem;
+                    border: 1px solid $gray3;
+                    border-radius: 0.75rem;
+                    padding-left: 3rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1rem;
+                    @include inputs;
+                    &:focus {
+                        outline: none;
+                        color: $gray1;
+                    }
+                }
+                input[type="tel"] {
+                    margin-bottom: 3rem;
+                }
+            }
+            .box-group {
+                display: flex;
+                input[type="text"],
+                select {
+                    width: 15.5rem;
+                    margin-right: 1rem;
+                }
+                select {
+                    background: none;
+                    width: 17.8rem;
+                    height: 3.05rem;
+                }
+            }
+            .box-info {
+                display: flex;
+                align-items: center;
+                input[type="checkbox"] {
+                    width: 21px;
+                    height: 21px;
+                }
+                .text-info {
+                    font-size: 0.75rem;
+                    color: $gray2;
+                    margin-left: .3rem;
+                }
+            }
+        }
+    }
+}
