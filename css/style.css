@@ -9,6 +9,24 @@
   color: #333333;
 }
 
+.title-shop {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #4E5150;
+}
+
+.price {
+  font-size: 1rem;
+  color: #F2994A;
+  margin-right: 1rem;
+}
+
+.price2 {
+  font-size: 0.75rem;
+  color: #4E5150;
+  text-decoration: line-through;
+}
+
 input[type=button] {
   padding: 1.25rem 3.12rem;
   background-color: #F2994A;
@@ -34,9 +52,10 @@ body {
 }
 
 .container {
-  margin: 5rem auto;
+  margin: 0rem auto;
   width: 100%;
   max-width: 1200px;
+  display: flex;
 }
 .container .box-left {
   width: 50%;
@@ -108,6 +127,82 @@ body {
   font-size: 0.75rem;
   color: #4F4F4F;
   margin-left: 0.3rem;
+}
+.container .box-right {
+  width: 35%;
+  margin: 7.5rem 0 0 4rem;
+}
+.container .box-right .shopping-box {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #F2F2F2;
+}
+.container .box-right .shopping-box .box {
+  display: flex;
+  width: 100%;
+}
+.container .box-right .shopping-box .box img {
+  width: 45%;
+  height: auto;
+  border-radius: 13px;
+  margin-right: 1.5rem;
+}
+.container .box-right .shopping-box .box .box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .box-right .shopping-box .box .box-content .box-price {
+  margin: -1.2rem 0 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+.container .box-right .shopping-box .box .box-content .count-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 8.12rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #828282;
+  border-radius: 12px;
+}
+.container .box-right .shopping-box .box .box-content .count-box .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #E0E0E0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container .box-right .shopping-box .box .box-content .count-box .icons span {
+  color: #828282;
+  font-size: 1rem;
+}
+.container .box-right .shopping-box .box .box-content .count-box .number {
+  font-size: 1rem;
+  color: #333333;
+}
+.container .box-right .shopping-box .box-2 {
+  margin-top: 2rem;
+}
+.container .box-right .shopping-box .box-total {
+  margin-top: 5rem;
+}
+.container .box-right .shopping-box .box-total .box-total-flex {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #BDBDBD;
+}
+.container .box-right .shopping-box .box-total .box-total-flex .total-text {
+  font-size: 1.12rem;
+  color: #333333;
+  font-weight: 600;
+}
+.container .box-right .shopping-box .box-total .box-total-flex .total-price {
+  font-size: 1.06rem;
+  column-rule-color: #333333;
 }
 
 /*# sourceMappingURL=style.css.map */

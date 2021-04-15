@@ -7,16 +7,15 @@ body {
 
 // Style Container
 .container {
-    margin: 5rem auto;
+    margin: 0rem auto;
     width: 100%;
     max-width: 1200px;
     // Box left style
+    display: flex;
     .box-left {
         width: 50%;
-        // Form Style
         form {
             margin-top: 3rem;
-            // background-color: blue;
             label {
                 @include label;
                 display: flex;
@@ -72,7 +71,84 @@ body {
                 .text-info {
                     font-size: 0.75rem;
                     color: $gray2;
-                    margin-left: .3rem;
+                    margin-left: 0.3rem;
+                }
+            }
+        }
+    }
+    // Box right style
+    .box-right {
+        width: 35%;
+        margin: 7.5rem 0 0 4rem;
+        .shopping-box {
+            padding: 2rem;
+            border-radius: 12px;
+            background-color: $gray6;
+            .box {
+                display: flex;
+                width: 100%;
+                img {
+                    width: 45%;
+                    height: auto;
+                    border-radius: 13px;
+                    margin-right: 1.5rem;
+                }
+                .box-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .box-price {
+                        margin: -1.2rem 0 1.5rem 0;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .count-box {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 8.12rem;
+                        padding: 0.2rem 0.5rem;
+                        border: 1px solid $gray3;
+                        border-radius: 12px;
+                        .icons {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            background-color: $gray5;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            span {
+                                color: $gray3;
+                                font-size: 1rem;
+                            }
+                        }
+                        .number {
+                            font-size: 1rem;
+                            color: $gray1;
+                        }
+                    }
+                }
+            }
+            .box-2 {
+                margin-top: 2rem;
+            }
+            .box-total {
+                margin-top: 5rem;
+                .box-total-flex {
+                    display: flex;
+                    justify-content: space-between;
+                    border-top: 1px solid $gray4;
+                    .total-text {
+                        font-size: 1.12rem;
+                        color: $gray1;
+                        font-weight: 600;
+                    }
+                    .total-price {
+                        font-size: 1.06rem;
+                        column-rule-color: $gray1;
+                    }
                 }
             }
         }

@@ -29,3 +29,15 @@
     color: $gray3;
     @content
 }
+
+@mixin title2 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: $secundary-color;
+}
+
+@mixin price($font, $color) {
+    font-size: $font;
+    color: $color;
+    @content
+}

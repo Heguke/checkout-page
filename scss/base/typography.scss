@@ -5,3 +5,17 @@
 .subtitle {
     @include subtitle;
 }
+
+.title-shop {
+    @include title2
+}
+
+.price {
+    @include price(1rem, $btn-color);
+    margin-right: 1rem;
+}
+
+.price2 {
+    @include price(.75rem, $secundary-color);
+    text-decoration: line-through;
+}
