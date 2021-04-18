@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://kelex-21.github.io/checkout-page/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/innb99fAiKYpF54Rd3P9">
       Solution
     </a>
     <span> | </span>
@@ -31,7 +31,7 @@
 
 ## Overview
 
-<img src="assets/screenshot/screenshot.png" />
+<img src="assets/screenshot/img.png" />
 
 
 ### Built With
