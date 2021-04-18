@@ -8,13 +8,14 @@ body {
 // Style Container
 .container {
     margin: 0rem auto;
+    max-width: 1500px;
     width: 100%;
-    max-width: 1200px;
     display: flex;
     // Box left style
     .box-left {
         width: 50%;
         form {
+            width: 100%;
             margin-top: 3rem;
             label {
                 @include label;
@@ -31,7 +32,7 @@ body {
                 input[type="tel"],
                 input[type="email"],
                 select {
-                    width: 91.5%;
+                    width: 90%;
                     height: 2.87rem;
                     border: 1px solid $gray3;
                     border-radius: 0.75rem;
@@ -50,15 +51,18 @@ body {
             }
             .box-group {
                 display: flex;
-                input[type="text"],
-                select {
-                    width: 15.5rem;
-                    margin-right: 1rem;
-                }
-                select {
-                    background: none;
-                    width: 17.8rem;
-                    height: 3.05rem;
+                label {
+                    width: 100%;
+                    input[type="text"],
+                    select {
+                        width: 80%;
+                        margin-right: 1rem;
+                    }
+                    select {
+                        background: none;
+                        width: 90%;
+                        height: 3.05rem;
+                    }
                 }
             }
             .box-info {
@@ -155,7 +159,117 @@ body {
     }
 }
 
-@include desktop;
-@include desktop2;
-@include tablet;
-@include mobile;
+@media (max-width: 1230px) {
+    .container {
+        flex-direction: column-reverse;
+        .box-left {
+            width: 100%;
+        }
+        .box-right {
+            margin: 2rem auto;
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        .box-right {
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 1rem;
+        max-width: 90%;
+        .box-left {
+            .title {
+                font-size: 1.5rem;
+            }
+            form {
+                width: 93%;
+                .subtitle {
+                    font-size: 0.87rem;
+                }
+                label {
+                    input[type="text"],
+                    input[type="tel"],
+                    input[type="email"],
+                    select {
+                        font-size: 0.75rem;
+                    }
+                }
+                .box-group {
+                    flex-direction: column;
+                    label {
+                        font-size: 0.62rem;
+                        input[type="text"],
+                        select {
+                            width: 90%;
+                        }
+                        select {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .box-right {
+            width: 100%;
+            .shopping-box {
+                .box {
+                    align-items: center;
+                    img {
+                        width: 50%;
+                        height: auto;
+                    }
+                    .box-content {
+                        .title-shop {
+                            font-size: 0.75rem;
+                        }
+                        .box-price {
+                            .price {
+                                font-size: 0.87rem;
+                            }
+                            .price2 {
+                                font-size: 0.62rem;
+                            }
+                        }
+                        .count-box {
+                            width: 6.2rem;
+                            padding: 0 0.5rem;
+                        }
+                    }
+                }
+                .box-total {
+                    .box-total-flex {
+                        font-size: 0.75rem;
+                        .total-text {
+                            font-size: 0.87rem;
+                        }
+                        .total-price {
+                            font-size: 0.87rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#nameError {
+    display: none;
+    font-size: 0.8em;
+}
+
+#nameError.visible {
+    display: block;
+    color: rgba(216, 68, 68, 0.9);
+    font-size: 1rem;
+}
+
+input.invalid {
+    border-color: red;
+}

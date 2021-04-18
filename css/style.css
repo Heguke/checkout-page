@@ -36,9 +36,8 @@ input[type=button] {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
-  float: right;
+  float: center;
   transition: 0.3s ease background-color;
-  text-align: end;
   margin-top: 2rem;
 }
 input[type=button]:hover {
@@ -54,14 +53,15 @@ body {
 
 .container {
   margin: 0rem auto;
+  max-width: 1500px;
   width: 100%;
-  max-width: 1200px;
   display: flex;
 }
 .container .box-left {
   width: 50%;
 }
 .container .box-left form {
+  width: 100%;
   margin-top: 3rem;
 }
 .container .box-left form label {
@@ -82,7 +82,7 @@ body {
 .container .box-left form label input[type=tel],
 .container .box-left form label input[type=email],
 .container .box-left form label select {
-  width: 91.5%;
+  width: 90%;
   height: 2.87rem;
   border: 1px solid #828282;
   border-radius: 0.75rem;
@@ -106,14 +106,17 @@ body {
 .container .box-left form .box-group {
   display: flex;
 }
-.container .box-left form .box-group input[type=text],
-.container .box-left form .box-group select {
-  width: 15.5rem;
+.container .box-left form .box-group label {
+  width: 100%;
+}
+.container .box-left form .box-group label input[type=text],
+.container .box-left form .box-group label select {
+  width: 80%;
   margin-right: 1rem;
 }
-.container .box-left form .box-group select {
+.container .box-left form .box-group label select {
   background: none;
-  width: 17.8rem;
+  width: 90%;
   height: 3.05rem;
 }
 .container .box-left form .box-info {
@@ -206,81 +209,102 @@ body {
   column-rule-color: #333333;
 }
 
-@media (max-width: 1240px) {
-  .box-left {
-    width: 40%;
-  }
-  .box-left form label input[type=text],
-.box-left form label input[type=tel],
-.box-left form label input[type=email],
-.box-left form label select {
-    width: 87%;
-  }
-  .box-left form .box-group input[type=text],
-.box-left form .box-group select {
-    width: 70%;
-  }
-  .box-left form .box-group select {
-    width: 1rem;
-  }
-
-  .box-right {
-    width: 50%;
-  }
-}
-@media (max-width: 1050px) {
-  form .box-group {
-    display: flex;
-    flex-direction: column;
-  }
-  form .box-group input[type=text],
-form .box-group select {
-    width: 87%;
-  }
-  form .box-group select {
-    width: 100%;
-  }
-}
-@media (max-width: 800px) {
+@media (max-width: 1230px) {
   .container {
-    flex-direction: column;
-    overflow: hidden;
+    flex-direction: column-reverse;
   }
   .container .box-left {
     width: 100%;
-    padding: 2rem;
-  }
-  .container .box-left form {
-    width: 80%;
-  }
-  .container .box-left form label input[type=text],
-.container .box-left form label input[type=tel],
-.container .box-left form label input[type=email],
-.container .box-left form label select {
-    width: 90%;
-  }
-  .container .box-left form .box-group input[type=text],
-.container .box-left form .box-group select {
-    width: 90%;
-  }
-  .container .box-left form .box-group select {
-    max-width: 100%;
   }
   .container .box-right {
-    width: 80%;
+    margin: 2rem auto;
+    width: 50%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 800px) {
+  .container .box-right {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1rem;
+    max-width: 90%;
+  }
+  .container .box-left .title {
+    font-size: 1.5rem;
+  }
+  .container .box-left form {
+    width: 93%;
+  }
+  .container .box-left form .subtitle {
+    font-size: 0.87rem;
+  }
   .container .box-left form label input[type=text],
 .container .box-left form label input[type=tel],
 .container .box-left form label input[type=email],
 .container .box-left form label select {
-    width: 83%;
+    font-size: 0.75rem;
   }
-  .container .box-left form .box-group input[type=text],
-.container .box-left form .box-group select {
-    width: 82%;
+  .container .box-left form .box-group {
+    flex-direction: column;
   }
+  .container .box-left form .box-group label {
+    font-size: 0.62rem;
+  }
+  .container .box-left form .box-group label input[type=text],
+.container .box-left form .box-group label select {
+    width: 90%;
+  }
+  .container .box-left form .box-group label select {
+    width: 100%;
+  }
+  .container .box-right {
+    width: 100%;
+  }
+  .container .box-right .shopping-box .box {
+    align-items: center;
+  }
+  .container .box-right .shopping-box .box img {
+    width: 50%;
+    height: auto;
+  }
+  .container .box-right .shopping-box .box .box-content .title-shop {
+    font-size: 0.75rem;
+  }
+  .container .box-right .shopping-box .box .box-content .box-price .price {
+    font-size: 0.87rem;
+  }
+  .container .box-right .shopping-box .box .box-content .box-price .price2 {
+    font-size: 0.62rem;
+  }
+  .container .box-right .shopping-box .box .box-content .count-box {
+    width: 6.2rem;
+    padding: 0 0.5rem;
+  }
+  .container .box-right .shopping-box .box-total .box-total-flex {
+    font-size: 0.75rem;
+  }
+  .container .box-right .shopping-box .box-total .box-total-flex .total-text {
+    font-size: 0.87rem;
+  }
+  .container .box-right .shopping-box .box-total .box-total-flex .total-price {
+    font-size: 0.87rem;
+  }
+}
+#nameError {
+  display: none;
+  font-size: 0.8em;
+}
+
+#nameError.visible {
+  display: block;
+  color: rgba(216, 68, 68, 0.9);
+  font-size: 1rem;
+}
+
+input.invalid {
+  border-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
