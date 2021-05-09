@@ -47,5 +47,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@Kelex-21](https://github.com/Kegubits)
-- Twitter [@KelexG21](https://twitter.com/Kegubits)
+- GitHub [@Kegubits](https://github.com/Kegubits)
+- Twitter [@Kegubits](https://twitter.com/Kegubits)
