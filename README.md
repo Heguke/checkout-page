@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://heguke.github.io/checkout-page/">
+    <a href="https://reliek.github.io/checkout-page/">
       Demo
     </a>
     <span> | </span>
@@ -47,5 +47,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@Heguke](https://github.com/Heguke)
-- Twitter [@Heguke21](https://twitter.com/heguke21)
+- GitHub [@Reliek](https://github.com/reliek)
+- Twitter [@Reliek21](https://twitter.com/reliek21)
